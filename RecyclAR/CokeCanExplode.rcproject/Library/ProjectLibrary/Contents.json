@@ -1,0 +1,17 @@
+[
+  {
+    "libraryIdentifier" : "1042c616fadb49fcf8dd7dad0c6b3fe6",
+    "format" : "arObject",
+    "displayName" : "Coke Can.arobject"
+  },
+  {
+    "libraryIdentifier" : "6e331db5d63bd8f9c4e68dc688f1d273",
+    "format" : "model",
+    "displayName" : "moving-cyl.usdz"
+  },
+  {
+    "libraryIdentifier" : "aa6f405473852d18e66882e5cd969007",
+    "format" : "model",
+    "displayName" : "Coke can.usdz"
+  }
+]
