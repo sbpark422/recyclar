@@ -12,6 +12,7 @@
 		17F8D8AB29AEEB90009C0F08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17F8D8AA29AEEB90009C0F08 /* Assets.xcassets */; };
 		17F8D8AE29AEEB90009C0F08 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17F8D8AD29AEEB90009C0F08 /* Preview Assets.xcassets */; };
 		17F8D8B529AEEF28009C0F08 /* CokeCanExplode.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 17F8D8B429AEEF28009C0F08 /* CokeCanExplode.rcproject */; };
+		F1D0210E29B54185003BFEAF /* CokeCanExplode.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = F1D0210D29B54185003BFEAF /* CokeCanExplode.rcproject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		17F8D8AA29AEEB90009C0F08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17F8D8AD29AEEB90009C0F08 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		17F8D8B429AEEF28009C0F08 /* CokeCanExplode.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = CokeCanExplode.rcproject; sourceTree = "<group>"; };
+		F1D0210D29B54185003BFEAF /* CokeCanExplode.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = CokeCanExplode.rcproject; path = ../../recyclar/RecyclAR/CokeCanExplode.rcproject; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				17F8D8A429AEEB8F009C0F08 /* AppDelegate.swift */,
 				17F8D8A629AEEB8F009C0F08 /* ContentView.swift */,
 				17F8D8B429AEEF28009C0F08 /* CokeCanExplode.rcproject */,
+				F1D0210D29B54185003BFEAF /* CokeCanExplode.rcproject */,
 				17F8D8AA29AEEB90009C0F08 /* Assets.xcassets */,
 				17F8D8AC29AEEB90009C0F08 /* Preview Content */,
 			);
@@ -143,6 +146,7 @@
 				17F8D8A729AEEB8F009C0F08 /* ContentView.swift in Sources */,
 				17F8D8A529AEEB8F009C0F08 /* AppDelegate.swift in Sources */,
 				17F8D8B529AEEF28009C0F08 /* CokeCanExplode.rcproject in Sources */,
+				F1D0210E29B54185003BFEAF /* CokeCanExplode.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
