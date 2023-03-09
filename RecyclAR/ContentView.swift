@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  RecyclAR
 //
-//  Created by Philipp Hemkemeyer on 2/28/23.
+//  Created by Philipp Hemkemeyer, Soo Bin Park on 2/28/23.
 //
 
 import SwiftUI
@@ -21,10 +21,23 @@ struct ARViewContainer: UIViewRepresentable {
         let arView = ARView(frame: .zero)
         
         // Load the "Box" scene from the "Experience" Reality File
-        let anchor = try! CokeCanExplode.loadScene()
+        let cokeAnchor = try! CokeCanExplode.loadCoke()
+        let speech = cokeAnchor.findEntity(named: "Speech")
+        
+        speech?.isEnabled = false
+        
+        let buddhaAnchor = try! CokeCanExplode.loadBuddha()
+        
+        // self.cokeAnchor?.notifications.triggerEx01.post() //trigger action sequence
+        
+        /// Configure how we behave when certain actions are triggered
+//        cokeAnchor.actions.explode.onAction = { _ in
+//            self.doSomething()
+//        }
         
         // Add the box anchor to the scene
-        arView.scene.anchors.append(anchor)
+        arView.scene.anchors.append(cokeAnchor)
+        arView.scene.anchors.append(buddhaAnchor)
         
         return arView
         
