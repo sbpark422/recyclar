@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  ARViewContainer.swift
 //  RecyclAR
 //
 //  Created by Philipp Hemkemeyer, Soo Bin Park on 2/28/23.
@@ -8,12 +8,8 @@
 import SwiftUI
 import RealityKit
 
-struct ContentView : View {
-    var body: some View {
-        ARViewContainer().edgesIgnoringSafeArea(.all)
-    }
-}
 
+/// ARViewContainer holds our AR scenes provided in the Reality Project 
 struct ARViewContainer: UIViewRepresentable {
     
     func makeUIView(context: Context) -> ARView {
@@ -26,7 +22,7 @@ struct ARViewContainer: UIViewRepresentable {
         
         speech?.isEnabled = false
         
-        let buddhaAnchor = try! CokeCanExplode.loadBuddha()
+//        let buddhaAnchor = try! CokeCanExplode.loadBuddha()
         
         // self.cokeAnchor?.notifications.triggerEx01.post() //trigger action sequence
         
@@ -37,7 +33,7 @@ struct ARViewContainer: UIViewRepresentable {
         
         // Add the box anchor to the scene
         arView.scene.anchors.append(cokeAnchor)
-        arView.scene.anchors.append(buddhaAnchor)
+//        arView.scene.anchors.append(buddhaAnchor)
         
         return arView
         
@@ -50,7 +46,7 @@ struct ARViewContainer: UIViewRepresentable {
 #if DEBUG
 struct ContentView_Previews : PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ARViewContainer()
     }
 }
 #endif

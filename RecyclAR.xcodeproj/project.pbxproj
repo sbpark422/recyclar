@@ -7,17 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		179825E829BBFFB000C98EF6 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179825E729BBFFB000C98EF6 /* TabBarView.swift */; };
+		179825EA29BC016800C98EF6 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179825E929BC016800C98EF6 /* InfoView.swift */; };
+		179825EC29BC017F00C98EF6 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179825EB29BC017F00C98EF6 /* ScannerView.swift */; };
+		179825EE29BC019200C98EF6 /* ScoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179825ED29BC019200C98EF6 /* ScoresView.swift */; };
 		17F8D8A529AEEB8F009C0F08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F8D8A429AEEB8F009C0F08 /* AppDelegate.swift */; };
-		17F8D8A729AEEB8F009C0F08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F8D8A629AEEB8F009C0F08 /* ContentView.swift */; };
+		17F8D8A729AEEB8F009C0F08 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F8D8A629AEEB8F009C0F08 /* ARViewContainer.swift */; };
 		17F8D8AB29AEEB90009C0F08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17F8D8AA29AEEB90009C0F08 /* Assets.xcassets */; };
 		17F8D8AE29AEEB90009C0F08 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17F8D8AD29AEEB90009C0F08 /* Preview Assets.xcassets */; };
 		F1D0210E29B54185003BFEAF /* CokeCanExplode.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = F1D0210D29B54185003BFEAF /* CokeCanExplode.rcproject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		179825E729BBFFB000C98EF6 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		179825E929BC016800C98EF6 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		179825EB29BC017F00C98EF6 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		179825ED29BC019200C98EF6 /* ScoresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresView.swift; sourceTree = "<group>"; };
 		17F8D8A129AEEB8F009C0F08 /* RecyclAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecyclAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F8D8A429AEEB8F009C0F08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		17F8D8A629AEEB8F009C0F08 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		17F8D8A629AEEB8F009C0F08 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
 		17F8D8AA29AEEB90009C0F08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17F8D8AD29AEEB90009C0F08 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F1D0210D29B54185003BFEAF /* CokeCanExplode.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; name = CokeCanExplode.rcproject; path = ../../recyclar/RecyclAR/CokeCanExplode.rcproject; sourceTree = "<group>"; };
@@ -54,7 +62,11 @@
 			isa = PBXGroup;
 			children = (
 				17F8D8A429AEEB8F009C0F08 /* AppDelegate.swift */,
-				17F8D8A629AEEB8F009C0F08 /* ContentView.swift */,
+				179825E729BBFFB000C98EF6 /* TabBarView.swift */,
+				179825E929BC016800C98EF6 /* InfoView.swift */,
+				179825EB29BC017F00C98EF6 /* ScannerView.swift */,
+				179825ED29BC019200C98EF6 /* ScoresView.swift */,
+				17F8D8A629AEEB8F009C0F08 /* ARViewContainer.swift */,
 				F1D0210D29B54185003BFEAF /* CokeCanExplode.rcproject */,
 				17F8D8AA29AEEB90009C0F08 /* Assets.xcassets */,
 				17F8D8AC29AEEB90009C0F08 /* Preview Content */,
@@ -140,8 +152,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17F8D8A729AEEB8F009C0F08 /* ContentView.swift in Sources */,
+				179825EE29BC019200C98EF6 /* ScoresView.swift in Sources */,
+				17F8D8A729AEEB8F009C0F08 /* ARViewContainer.swift in Sources */,
 				17F8D8A529AEEB8F009C0F08 /* AppDelegate.swift in Sources */,
+				179825E829BBFFB000C98EF6 /* TabBarView.swift in Sources */,
+				179825EC29BC017F00C98EF6 /* ScannerView.swift in Sources */,
+				179825EA29BC016800C98EF6 /* InfoView.swift in Sources */,
 				F1D0210E29B54185003BFEAF /* CokeCanExplode.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
