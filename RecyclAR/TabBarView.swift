@@ -23,7 +23,8 @@ struct TabBarView: View {
                     selectedTab == 1 ? Image(systemName: "viewfinder.circle") : Image(systemName: "viewfinder")
                     Text("Scanner")
                 }.tag(1)
-                .edgesIgnoringSafeArea(.top)
+                .edgesIgnoringSafeArea(.all)
+                .toolbarBackground(.hidden, for: .tabBar)
             ScoresView()
                 .tabItem {
                     selectedTab == 2 ? Image(systemName: "trophy.circle") : Image(systemName: "trophy")
