@@ -22,9 +22,9 @@ struct ARViewContainer: UIViewRepresentable {
         
         speech?.isEnabled = false
         
-//        let buddhaAnchor = try! CokeCanExplode.loadBuddha()
+        let buddhaAnchor = try! CokeCanExplode.loadBuddha()
         
-        // self.cokeAnchor?.notifications.triggerEx01.post() //trigger action sequence
+        cokeAnchor.notifications.triggerEx01.post() //trigger action sequence
         
         /// Configure how we behave when certain actions are triggered
 //        cokeAnchor.actions.explode.onAction = { _ in
@@ -33,7 +33,7 @@ struct ARViewContainer: UIViewRepresentable {
         
         // Add the coke and buddha anchor to the scene
         arView.scene.anchors.append(cokeAnchor)
-//        arView.scene.anchors.append(buddhaAnchor)
+        arView.scene.anchors.append(buddhaAnchor)
         
         return arView
         
