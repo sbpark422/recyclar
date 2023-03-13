@@ -31,7 +31,7 @@ struct ARViewContainer: UIViewRepresentable {
 //            self.doSomething()
 //        }
         
-        // Add the box anchor to the scene
+        // Add the coke and buddha anchor to the scene
         arView.scene.anchors.append(cokeAnchor)
 //        arView.scene.anchors.append(buddhaAnchor)
         
