@@ -16,13 +16,15 @@ struct ARViewContainer: UIViewRepresentable {
         
         let arView = ARView(frame: .zero)
         
-        // Load the "Box" scene from the "Experience" Reality File
+        // Load the scenes from reality file
+        let buddhaAnchor = try! CokeCanExplode.loadBuddha()
+        let cokeZeroAnchor = try! CokeCanExplode.loadCokeZero()
         let cokeAnchor = try! CokeCanExplode.loadCoke()
         let speech = cokeAnchor.findEntity(named: "Speech")
         
         speech?.isEnabled = false
         
-        let buddhaAnchor = try! CokeCanExplode.loadBuddha()
+        
         
         cokeAnchor.notifications.triggerEx01.post() //trigger action sequence
         
@@ -31,8 +33,9 @@ struct ARViewContainer: UIViewRepresentable {
 //            self.doSomething()
 //        }
         
-        // Add the coke and buddha anchor to the scene
+        // Add the coke, coke zero and buddha anchor to the scene
         arView.scene.anchors.append(cokeAnchor)
+        arView.scene.anchors.append(cokeZeroAnchor)
         arView.scene.anchors.append(buddhaAnchor)
         
         return arView

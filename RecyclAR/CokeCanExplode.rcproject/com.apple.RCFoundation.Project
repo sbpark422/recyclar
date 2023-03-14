@@ -538,21 +538,21 @@
               "title" : "Coke",
               "viewTransform" : {
                 "cameraTransform" : [
-                  0.9861944317817688,
-                  7.5673840527201719e-09,
-                  0.16559183597564697,
+                  0.9902680516242981,
+                  6.9349308517985264e-09,
+                  0.1391737163066864,
                   0,
-                  0.09969087690114975,
-                  0.79847502708435059,
-                  -0.59371650218963623,
+                  0.088397406041622162,
+                  0.77238136529922485,
+                  -0.62897753715515137,
                   0,
-                  -0.13222095370292664,
-                  0.6020277738571167,
-                  0.78745162487030029,
+                  -0.10749519616365433,
+                  0.63515883684158325,
+                  0.76486462354660034,
                   0,
-                  0.068738996982574463,
-                  0.64129394292831421,
-                  0.57881069183349609,
+                  0.087540477514266968,
+                  0.66439449787139893,
+                  0.55293524265289307,
                   1
                 ],
                 "sceneTransform" : [
@@ -714,6 +714,274 @@
                   -0.23633526265621185,
                   0.40695804357528687,
                   0.52983784675598145,
+                  1
+                ],
+                "sceneTransform" : [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0.99999994039535522,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0.99999994039535522,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              }
+            }
+          ],
+          "__version" : 5
+        },
+        {
+          "__content" : [
+            {
+              "arAnchorSpecification" : {
+                "name" : "object",
+                "url" : "arObject:353768da12ee951c83e30dd90d4c813a\/CokeZero.arobject"
+              },
+              "behaviors" : [
+                {
+                  "__content" : [
+                    {
+                      "accessibility" : {
+                        "__content" : [
+                          {
+                            "isEnabled" : false
+                          }
+                        ],
+                        "__version" : 1
+                      },
+                      "actionGroups" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "axis" : [
+                                            0,
+                                            1,
+                                            0
+                                          ],
+                                          "direction" : "clockwise",
+                                          "duration" : 1,
+                                          "iterations" : 4,
+                                          "target" : [
+                                            "EB2FF65E-CB77-4A98-ACD9-A9D30A2907BB"
+                                          ]
+                                        },
+                                        "name" : {
+                                          "type" : "spin"
+                                        }
+                                      },
+                                      "identifier" : "AEEBE9E2-8ADB-4A16-91F6-49EF99D05736",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "EE15EB18-F416-40CB-8C14-08A900B4366A",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ],
+                      "color" : [
+                        0.364705890417099,
+                        0.74117648601531982,
+                        0.69019609689712524,
+                        1
+                      ],
+                      "identifier" : "92E19FE4-B7F9-42E2-ABC7-149AB2B101AF",
+                      "isEnabled" : true,
+                      "isLooping" : false,
+                      "isModal" : false,
+                      "name" : "Behavior",
+                      "triggers" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurationBox" : {
+                                "configuration" : {
+                                  "distance" : 0.5,
+                                  "target" : [
+                                    "EB2FF65E-CB77-4A98-ACD9-A9D30A2907BB"
+                                  ],
+                                  "type" : 0
+                                },
+                                "name" : "proximity"
+                              },
+                              "identifier" : "10206367-B9F7-484E-896F-6002F3751748",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ]
+                    }
+                  ],
+                  "__version" : 3
+                }
+              ],
+              "gravity" : [
+                0,
+                -9.8000001907348633,
+                0
+              ],
+              "identifier" : "709C1AE1-44B2-4930-B351-C8258DE91BA5",
+              "material" : "concrete",
+              "overrides" : {
+                "children" : {
+                  "29151DA4-EC90-465D-BA20-6F28067843EC" : null,
+                  "A906F75D-C7C3-450A-B4D8-5FD131B762C4" : {
+                    "overrides" : {
+                      "children" : {
+                        "USDScene" : {
+                          "overrides" : {
+                            "arguments" : [
+                              [
+                                "includeSceneScaling",
+                                {
+                                  "typeName" : "Bool",
+                                  "value" : false
+                                }
+                              ],
+                              [
+                                "subpath",
+                                {
+                                  "typeName" : "String",
+                                  "value" : ""
+                                }
+                              ],
+                              [
+                                "url",
+                                {
+                                  "typeName" : "String",
+                                  "value" : "model:aa6f405473852d18e66882e5cd969007\/Coke%20can.usdz"
+                                }
+                              ],
+                              [
+                                "withDescendants",
+                                {
+                                  "typeName" : "Bool",
+                                  "value" : true
+                                }
+                              ]
+                            ],
+                            "factory" : {
+                              "identifier" : "com.apple.af.FileImportAssetFactory",
+                              "version" : "0.0"
+                            },
+                            "runtimeAttributes" : [
+                              [
+                                "RuntimeIdentifier",
+                                {
+                                  "typeName" : "UUID",
+                                  "value" : "C7C07018-A516-4C92-AFBF-CD50D0B2CE80"
+                                }
+                              ]
+                            ]
+                          },
+                          "transform" : {
+                            "matrix" : [
+                              1,
+                              0,
+                              0,
+                              0,
+                              0,
+                              1,
+                              0,
+                              0,
+                              0,
+                              0,
+                              1,
+                              0,
+                              0,
+                              0,
+                              0,
+                              1
+                            ]
+                          }
+                        }
+                      },
+                      "factory" : {
+                        "identifier" : "com.apple.af.Group",
+                        "version" : "0.0"
+                      },
+                      "runtimeAttributes" : [
+                        [
+                          "RuntimeIdentifier",
+                          {
+                            "typeName" : "UUID",
+                            "value" : "EB2FF65E-CB77-4A98-ACD9-A9D30A2907BB"
+                          }
+                        ]
+                      ]
+                    },
+                    "transform" : {
+                      "matrix" : [
+                        0.05000000074505806,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0.05000000074505806,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0.05000000074505806,
+                        0,
+                        0,
+                        -0.015624142251908779,
+                        0,
+                        1
+                      ]
+                    }
+                  }
+                },
+                "factory" : null,
+                "runtimeAttributes" : [
+                  [
+                    "isAccessibilityEnabled",
+                    {
+                      "typeName" : "Bool",
+                      "value" : false
+                    }
+                  ]
+                ]
+              },
+              "physicsMode" : "grid",
+              "title" : "CokeZero",
+              "viewTransform" : {
+                "cameraTransform" : [
+                  0.86054742336273193,
+                  -7.4505814851022478e-09,
+                  0.50937038660049438,
+                  0,
+                  0.20271798968315125,
+                  0.91739529371261597,
+                  -0.34247833490371704,
+                  0,
+                  -0.46729409694671631,
+                  0.39797744154930115,
+                  0.78946191072463989,
+                  0,
+                  -1.8195379972457886,
+                  1.3904144763946533,
+                  2.8955917358398438,
                   1
                 ],
                 "sceneTransform" : [

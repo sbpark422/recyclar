@@ -23,5 +23,10 @@
     "libraryIdentifier" : "69bd30b878e9a477be1538f5b4e0b3f8",
     "format" : "arObject",
     "displayName" : "cokeCan.arobject"
+  },
+  {
+    "libraryIdentifier" : "353768da12ee951c83e30dd90d4c813a",
+    "format" : "arObject",
+    "displayName" : "CokeZero.arobject"
   }
 ]
