@@ -19,7 +19,10 @@ struct StoreCardView: View {
             // Background of box
             RoundedRectangle(cornerRadius: 12)
                 .strokeBorder(Color.gray, lineWidth: 1)
-                .background(Material.regular)
+                .background(
+                    RoundedRectangle(cornerRadius: 12)
+                        .fill(Material.regular)
+                )
             
             // Foreground of box
             VStack(spacing: 0.0) {
@@ -29,6 +32,7 @@ struct StoreCardView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .clipped()
+                    .frame(height: 150)
                     .cornerRadius(8)
                     .padding(12)
                 
@@ -41,7 +45,7 @@ struct StoreCardView: View {
                 HStack {
                     Image(systemName: "mappin.and.ellipse")
                     Text(location)
-                        
+                    
                         .foregroundColor(.gray)
                 }
                 .font(.caption2)
@@ -51,7 +55,7 @@ struct StoreCardView: View {
             
             
         }
-        .frame(width: 280, height: 200)
+        .frame(width: 280, height: 220)
     }
 }
 
