@@ -15,7 +15,7 @@ struct TabBarView: View {
         TabView(selection: $selectedTab) {
             DiscoverView()
                 .tabItem {
-                    selectedTab == 0 ? Image(systemName: "info.circle") : Image(systemName: "info")
+                    selectedTab == 0 ? Image(systemName: "eye.circle") : Image(systemName: "eye")
                     Text("Info")
                 }.tag(0)
             ScannerView()
