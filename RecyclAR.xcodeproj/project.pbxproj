@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		179825E829BBFFB000C98EF6 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179825E729BBFFB000C98EF6 /* TabBarView.swift */; };
-		179825EA29BC016800C98EF6 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179825E929BC016800C98EF6 /* InfoView.swift */; };
+		179825EA29BC016800C98EF6 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179825E929BC016800C98EF6 /* DiscoverView.swift */; };
 		179825EC29BC017F00C98EF6 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179825EB29BC017F00C98EF6 /* ScannerView.swift */; };
 		179825EE29BC019200C98EF6 /* ScoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179825ED29BC019200C98EF6 /* ScoresView.swift */; };
+		17A564C629DF235600758215 /* StoreCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A564C529DF235600758215 /* StoreCardView.swift */; };
 		17F8D8A529AEEB8F009C0F08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F8D8A429AEEB8F009C0F08 /* AppDelegate.swift */; };
 		17F8D8A729AEEB8F009C0F08 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F8D8A629AEEB8F009C0F08 /* ARViewContainer.swift */; };
 		17F8D8AB29AEEB90009C0F08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17F8D8AA29AEEB90009C0F08 /* Assets.xcassets */; };
@@ -20,9 +21,10 @@
 
 /* Begin PBXFileReference section */
 		179825E729BBFFB000C98EF6 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
-		179825E929BC016800C98EF6 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		179825E929BC016800C98EF6 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 		179825EB29BC017F00C98EF6 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 		179825ED29BC019200C98EF6 /* ScoresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresView.swift; sourceTree = "<group>"; };
+		17A564C529DF235600758215 /* StoreCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCardView.swift; sourceTree = "<group>"; };
 		17F8D8A129AEEB8F009C0F08 /* RecyclAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecyclAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F8D8A429AEEB8F009C0F08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17F8D8A629AEEB8F009C0F08 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
@@ -63,7 +65,8 @@
 			children = (
 				17F8D8A429AEEB8F009C0F08 /* AppDelegate.swift */,
 				179825E729BBFFB000C98EF6 /* TabBarView.swift */,
-				179825E929BC016800C98EF6 /* InfoView.swift */,
+				179825E929BC016800C98EF6 /* DiscoverView.swift */,
+				17A564C529DF235600758215 /* StoreCardView.swift */,
 				179825EB29BC017F00C98EF6 /* ScannerView.swift */,
 				179825ED29BC019200C98EF6 /* ScoresView.swift */,
 				17F8D8A629AEEB8F009C0F08 /* ARViewContainer.swift */,
@@ -152,12 +155,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17A564C629DF235600758215 /* StoreCardView.swift in Sources */,
 				179825EE29BC019200C98EF6 /* ScoresView.swift in Sources */,
 				17F8D8A729AEEB8F009C0F08 /* ARViewContainer.swift in Sources */,
 				17F8D8A529AEEB8F009C0F08 /* AppDelegate.swift in Sources */,
 				179825E829BBFFB000C98EF6 /* TabBarView.swift in Sources */,
 				179825EC29BC017F00C98EF6 /* ScannerView.swift in Sources */,
-				179825EA29BC016800C98EF6 /* InfoView.swift in Sources */,
+				179825EA29BC016800C98EF6 /* DiscoverView.swift in Sources */,
 				F1D0210E29B54185003BFEAF /* CokeCanExplode.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

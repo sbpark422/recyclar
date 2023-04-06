@@ -13,7 +13,7 @@ struct TabBarView: View {
     
     var body: some View {
         TabView(selection: $selectedTab) {
-            InfoView()
+            DiscoverView()
                 .tabItem {
                     selectedTab == 0 ? Image(systemName: "info.circle") : Image(systemName: "info")
                     Text("Info")
