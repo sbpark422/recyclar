@@ -13,6 +13,8 @@
 		179825EE29BC019200C98EF6 /* ScoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179825ED29BC019200C98EF6 /* ScoresView.swift */; };
 		17A564C629DF235600758215 /* StoreCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A564C529DF235600758215 /* StoreCardView.swift */; };
 		17A564CA29DF7D7100758215 /* TopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A564C929DF7D7100758215 /* TopBarView.swift */; };
+		17A564CC29DFA0E400758215 /* ScannedItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A564CB29DFA0E400758215 /* ScannedItemView.swift */; };
+		17A564CF29DFA40000758215 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A564CE29DFA40000758215 /* ViewModifiers.swift */; };
 		17F8D8A529AEEB8F009C0F08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F8D8A429AEEB8F009C0F08 /* AppDelegate.swift */; };
 		17F8D8A729AEEB8F009C0F08 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F8D8A629AEEB8F009C0F08 /* ARViewContainer.swift */; };
 		17F8D8AB29AEEB90009C0F08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17F8D8AA29AEEB90009C0F08 /* Assets.xcassets */; };
@@ -27,6 +29,8 @@
 		179825ED29BC019200C98EF6 /* ScoresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresView.swift; sourceTree = "<group>"; };
 		17A564C529DF235600758215 /* StoreCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCardView.swift; sourceTree = "<group>"; };
 		17A564C929DF7D7100758215 /* TopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
+		17A564CB29DFA0E400758215 /* ScannedItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannedItemView.swift; sourceTree = "<group>"; };
+		17A564CE29DFA40000758215 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 		17F8D8A129AEEB8F009C0F08 /* RecyclAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecyclAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F8D8A429AEEB8F009C0F08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17F8D8A629AEEB8F009C0F08 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
@@ -46,6 +50,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17A564CD29DFA3D500758215 /* DiscoverSubViews */ = {
+			isa = PBXGroup;
+			children = (
+				17A564C929DF7D7100758215 /* TopBarView.swift */,
+				17A564CB29DFA0E400758215 /* ScannedItemView.swift */,
+				17A564C529DF235600758215 /* StoreCardView.swift */,
+				17A564CE29DFA40000758215 /* ViewModifiers.swift */,
+			);
+			path = DiscoverSubViews;
+			sourceTree = "<group>";
+		};
 		17F8D89829AEEB8E009C0F08 = {
 			isa = PBXGroup;
 			children = (
@@ -68,8 +83,7 @@
 				17F8D8A429AEEB8F009C0F08 /* AppDelegate.swift */,
 				179825E729BBFFB000C98EF6 /* TabBarView.swift */,
 				179825E929BC016800C98EF6 /* DiscoverView.swift */,
-				17A564C529DF235600758215 /* StoreCardView.swift */,
-				17A564C929DF7D7100758215 /* TopBarView.swift */,
+				17A564CD29DFA3D500758215 /* DiscoverSubViews */,
 				179825EB29BC017F00C98EF6 /* ScannerView.swift */,
 				179825ED29BC019200C98EF6 /* ScoresView.swift */,
 				17F8D8A629AEEB8F009C0F08 /* ARViewContainer.swift */,
@@ -158,6 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17A564CC29DFA0E400758215 /* ScannedItemView.swift in Sources */,
 				17A564C629DF235600758215 /* StoreCardView.swift in Sources */,
 				17A564CA29DF7D7100758215 /* TopBarView.swift in Sources */,
 				179825EE29BC019200C98EF6 /* ScoresView.swift in Sources */,
@@ -166,6 +181,7 @@
 				179825E829BBFFB000C98EF6 /* TabBarView.swift in Sources */,
 				179825EC29BC017F00C98EF6 /* ScannerView.swift in Sources */,
 				179825EA29BC016800C98EF6 /* DiscoverView.swift in Sources */,
+				17A564CF29DFA40000758215 /* ViewModifiers.swift in Sources */,
 				F1D0210E29B54185003BFEAF /* CokeCanExplode.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

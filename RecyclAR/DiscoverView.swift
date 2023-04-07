@@ -17,15 +17,22 @@ struct DiscoverView: View {
                 .padding(.bottom, 30)
             Divider()
             
-//            Spacer()
+            // Scanned items section
+            Text("Recently scanned")
+                .headingDiscoverTab()
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack {
+                    ScannedItemView(imageName: "cheerios", name: "Cheerios")
+                    ScannedItemView(imageName: "cheerios", name: "Cheerios")
+                    ScannedItemView(imageName: "cheerios", name: "Cheerios")
+                    ScannedItemView(imageName: "cheerios", name: "Cheerios")
+                }
+                .padding(.leading, 28)
+            }
             
             // Store section
             Text("Nearby Stores")
-                .font(.title3)
-                .tracking(0.16)
-                .padding(.bottom, 10)
-                .padding(.top, 16)
-                .padding(.leading, 28)
+                .headingDiscoverTab()
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
                     StoreCardView(imageName: "publix-store", name: "Publix Super Market at The Plaza Midtown", location: "950 W Peachtree St NW, Atlanta, GA 30309")
@@ -33,6 +40,10 @@ struct DiscoverView: View {
                 }
                 .padding(.leading, 28)
             }
+            
+            // Sustainable section
+            Text("Feeling sustainable?")
+                .headingDiscoverTab()
             
             Spacer()
             
