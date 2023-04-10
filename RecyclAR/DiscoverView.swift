@@ -18,8 +18,14 @@ struct DiscoverView: View {
             Divider()
             
             // Scanned items section
-            Text("Recently scanned")
-                .headingDiscoverTab()
+            HStack {
+                Text("Recently scanned")
+                    
+                Spacer()
+                Image(systemName: "chevron.right")
+                    .padding(.trailing, 28)
+            }
+            .headingDiscoverTab()
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
                     ScannedItemView(imageName: "cheerios", name: "Cheerios")

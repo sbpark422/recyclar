@@ -26,6 +26,7 @@ struct TopBarView: View {
                         Image(systemName: "rosette")
                         Text("Level 1")
                     }
+                    .foregroundColor(.black)
                     .font(.footnote)
                 }
             }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		175DF71229E4BA720090F603 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175DF71129E4BA720090F603 /* ProductModel.swift */; };
 		179825E829BBFFB000C98EF6 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179825E729BBFFB000C98EF6 /* TabBarView.swift */; };
 		179825EA29BC016800C98EF6 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179825E929BC016800C98EF6 /* DiscoverView.swift */; };
 		179825EC29BC017F00C98EF6 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179825EB29BC017F00C98EF6 /* ScannerView.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		175DF71129E4BA720090F603 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		179825E729BBFFB000C98EF6 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		179825E929BC016800C98EF6 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 		179825EB29BC017F00C98EF6 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				17A564CD29DFA3D500758215 /* DiscoverSubViews */,
 				179825EB29BC017F00C98EF6 /* ScannerView.swift */,
 				179825ED29BC019200C98EF6 /* ScoresView.swift */,
+				175DF71129E4BA720090F603 /* ProductModel.swift */,
 				17F8D8A629AEEB8F009C0F08 /* ARViewContainer.swift */,
 				F1D0210D29B54185003BFEAF /* CokeCanExplode.rcproject */,
 				17F8D8AA29AEEB90009C0F08 /* Assets.xcassets */,
@@ -179,6 +182,7 @@
 				17F8D8A729AEEB8F009C0F08 /* ARViewContainer.swift in Sources */,
 				17F8D8A529AEEB8F009C0F08 /* AppDelegate.swift in Sources */,
 				179825E829BBFFB000C98EF6 /* TabBarView.swift in Sources */,
+				175DF71229E4BA720090F603 /* ProductModel.swift in Sources */,
 				179825EC29BC017F00C98EF6 /* ScannerView.swift in Sources */,
 				179825EA29BC016800C98EF6 /* DiscoverView.swift in Sources */,
 				17A564CF29DFA40000758215 /* ViewModifiers.swift in Sources */,
