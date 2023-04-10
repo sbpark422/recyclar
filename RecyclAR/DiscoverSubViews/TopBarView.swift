@@ -12,34 +12,53 @@ struct TopBarView: View {
         HStack(alignment: .top) {
             
             // Profile and level display
-            VStack {
-                Image(systemName: "person")
-                    .foregroundColor(.white)
-                    .bold()
-                    .frame(width: 52,height: 52)
-                    .background(Color.gray)
-                .cornerRadius(52)
-                HStack {
-                    Image(systemName: "rosette")
-                    Text("Level 1")
+            NavigationLink {
+                Text("User profile is here.")
+            } label: {
+                VStack {
+                    Image(systemName: "person")
+                        .foregroundColor(.white)
+                        .bold()
+                        .frame(width: 52,height: 52)
+                        .background(Color.gray)
+                        .cornerRadius(52)
+                    HStack {
+                        Image(systemName: "rosette")
+                        Text("Level 1")
+                    }
+                    .font(.footnote)
                 }
-                .font(.footnote)
             }
             
             Spacer()
             
             // Scanner code and app settings
             HStack {
-                Image(systemName: "qrcode")
-                    .frame(width: 52,height: 52)
-                Image(systemName: "gear")
-                    .frame(width: 52,height: 52)
+                
+                // Code to scan
+                NavigationLink {
+                    Text("QR Code in **big**.")
+                } label: {
+                    Image(systemName: "qrcode")
+                        .frame(width: 52,height: 52)
+                }
+                
+                // App settings
+                NavigationLink {
+                    Text("You found the settings.")
+                        .navigationTitle("Settings")
+                } label: {
+                    Image(systemName: "gear")
+                        .frame(width: 52,height: 52)
+                }
+                
             }.foregroundColor(.white)
                 .bold()
                 .background(Color.gray)
                 .cornerRadius(52)
             
         }
+        
     }
 }
 
