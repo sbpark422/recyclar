@@ -33,6 +33,7 @@ struct ScannedItemView: View {
                 Text(product.name)
                     .foregroundColor(.black)
             }
+            .frame(width: 110)
         }
             
     }

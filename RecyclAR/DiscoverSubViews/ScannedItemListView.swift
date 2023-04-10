@@ -13,7 +13,7 @@ struct ScannedItemListView: View {
     
     var body: some View {
         ScrollView(.horizontal) {
-            LazyHStack {
+            LazyHStack(spacing: 4) {
                 ForEach(products) { product in
                     ScannedItemView(product: product)
                 }
