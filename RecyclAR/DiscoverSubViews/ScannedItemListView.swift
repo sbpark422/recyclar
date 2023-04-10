@@ -15,7 +15,7 @@ struct ScannedItemListView: View {
         ScrollView(.horizontal) {
             LazyHStack {
                 ForEach(products) { product in
-                    ScannedItemView(imageName: product.imageName, name: product.name)
+                    ScannedItemView(product: product)
                 }
             }
             .padding(.leading, 28)
