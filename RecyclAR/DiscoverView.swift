@@ -19,23 +19,19 @@ struct DiscoverView: View {
             Divider()
             
             // Scanned items section
-            HStack {
-                Text("Recently scanned")
-                    
-                Spacer()
-                Image(systemName: "chevron.right")
-                    .padding(.trailing, 28)
+            NavigationLink {
+                ScannedItemGridView()
+            } label: {
+                HStack {
+                    Text("Recently scanned")
+                        
+                    Spacer()
+                    Image(systemName: "chevron.right")
+                        .padding(.trailing, 28)
+                }
+                .headingDiscoverTab()
+                .foregroundColor(.black)
             }
-            .headingDiscoverTab()
-//            ScrollView(.horizontal, showsIndicators: false) {
-//                HStack {
-//                    ScannedItemView(imageName: "cheerios", name: "Cheerios")
-//                    ScannedItemView(imageName: "cheerios", name: "Cheerios")
-//                    ScannedItemView(imageName: "cheerios", name: "Cheerios")
-//                    ScannedItemView(imageName: "cheerios", name: "Cheerios")
-//                }
-//                .padding(.leading, 28)
-//            }
             ScannedItemListView()
             
             // Store section

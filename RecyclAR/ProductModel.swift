@@ -11,6 +11,9 @@ struct Product: Identifiable {
     
     static var all: [Product] = [
         Product(name: "Cheerios", imageName: "cheerios", sustainabilityPoints: 80),
+        Product(name: "Cheerios", imageName: "cheerios", sustainabilityPoints: 80),
+        Product(name: "Cheerios", imageName: "cheerios", sustainabilityPoints: 80),
+        Product(name: "Cheerios", imageName: "cheerios", sustainabilityPoints: 80),
         Product(name: "Pure Life Water", imageName: "pureLifeWater", sustainabilityPoints: 60)
     ]
     
