@@ -19,7 +19,7 @@ struct ScannedItemView: View {
                 .aspectRatio(contentMode: .fit)
                 .clipped()
                 .padding(10)
-                .frame(height: 84)
+                .frame(width: 84, height: 84)
             .background(Circle().fill(.gray))
             Text(name)
         }
@@ -29,6 +29,6 @@ struct ScannedItemView: View {
 
 struct ScannedItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ScannedItemView(imageName: "cheerios", name: "Cheerios")
+        ScannedItemView(imageName: "pureLifeWater", name: "Cheerios")
     }
 }

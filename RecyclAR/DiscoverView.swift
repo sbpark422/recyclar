@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct DiscoverView: View {
+    
     var body: some View {
         
         VStack(alignment: .leading, spacing: 0.0) {
@@ -26,15 +27,16 @@ struct DiscoverView: View {
                     .padding(.trailing, 28)
             }
             .headingDiscoverTab()
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack {
-                    ScannedItemView(imageName: "cheerios", name: "Cheerios")
-                    ScannedItemView(imageName: "cheerios", name: "Cheerios")
-                    ScannedItemView(imageName: "cheerios", name: "Cheerios")
-                    ScannedItemView(imageName: "cheerios", name: "Cheerios")
-                }
-                .padding(.leading, 28)
-            }
+//            ScrollView(.horizontal, showsIndicators: false) {
+//                HStack {
+//                    ScannedItemView(imageName: "cheerios", name: "Cheerios")
+//                    ScannedItemView(imageName: "cheerios", name: "Cheerios")
+//                    ScannedItemView(imageName: "cheerios", name: "Cheerios")
+//                    ScannedItemView(imageName: "cheerios", name: "Cheerios")
+//                }
+//                .padding(.leading, 28)
+//            }
+            ScannedItemListView()
             
             // Store section
             Text("Nearby Stores")
