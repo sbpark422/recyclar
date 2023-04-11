@@ -2,7 +2,7 @@
 //  ARViewContainer.swift
 //  RecyclAR
 //
-//  Created by Soo Bin Park on 4/10/23.
+//  Created by Philipp Hemkemeyer, Soo Bin Park on 2/28/23.
 //
 
 import ARKit
