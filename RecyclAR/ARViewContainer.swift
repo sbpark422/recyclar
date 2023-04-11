@@ -2,50 +2,69 @@
 //  ARViewContainer.swift
 //  RecyclAR
 //
-//  Created by Philipp Hemkemeyer, Soo Bin Park on 2/28/23.
+//  Created by Soo Bin Park on 4/10/23.
 //
 
+import ARKit
 import SwiftUI
 import RealityKit
 
 
 /// ARViewContainer holds our AR scenes provided in the Reality Project 
 struct ARViewContainer: UIViewRepresentable {
-    
-    func makeUIView(context: Context) -> ARView {
-        
+
+    func makeUIView(context: Context) -> UIView {
+        return makeUIViewController(context: context).view
+    }
+
+    func updateUIView(_ uiView: UIView, context: Context) {}
+
+    func makeUIViewController(context: Context) -> UIViewController {
+        let viewController = UIViewController()
+        let tapView = TapView()
+
         let arView = ARView(frame: .zero)
-        
-        // Load the scenes from reality file
-        let buddhaAnchor = try! CokeCanExplode.loadBuddha()
-        let cokeZeroAnchor = try! CokeCanExplode.loadCokeZero()
         let cokeAnchor = try! CokeCanExplode.loadCoke()
-        let speech = cokeAnchor.findEntity(named: "Speech")
         
-        speech?.isEnabled = false
-        
-        
-        
-        cokeAnchor.notifications.triggerEx01.post() //trigger action sequence
-        
-        /// Configure how we behave when certain actions are triggered
-//        cokeAnchor.actions.explode.onAction = { _ in
-//            self.doSomething()
-//        }
-        
-        // Add the coke, coke zero and buddha anchor to the scene
+        //let buddhaAnchor = try! CokeCanExplode.loadBuddha()
+        //let cokeZeroAnchor = try! CokeCanExplode.loadCokeZero()
+        //let speech = cokeAnchor.findEntity(named: "Speech")
+        //speech?.isEnabled = false
+        //cokeAnchor.notifications.triggerEx01.post()
         arView.scene.anchors.append(cokeAnchor)
-        arView.scene.anchors.append(cokeZeroAnchor)
-        arView.scene.anchors.append(buddhaAnchor)
+        //arView.scene.anchors.append(cokeZeroAnchor)
+        //arView.scene.anchors.append(buddhaAnchor)
+        viewController.view.addSubview(arView)
         
-        return arView
+        arView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            arView.leadingAnchor.constraint(equalTo: viewController.view.leadingAnchor),
+            arView.trailingAnchor.constraint(equalTo: viewController.view.trailingAnchor),
+            arView.topAnchor.constraint(equalTo: viewController.view.topAnchor),
+            arView.bottomAnchor.constraint(equalTo: viewController.view.bottomAnchor)
+        ])
         
+        let coachingOverlay = ARCoachingOverlayView()
+        coachingOverlay.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        coachingOverlay.session = arView.session
+        coachingOverlay.goal = .horizontalPlane
+        arView.addSubview(coachingOverlay)
+
+        let tapHostingController = UIHostingController(rootView: tapView)
+        tapHostingController.view.backgroundColor = .clear // Set background color to clear
+        tapHostingController.view.translatesAutoresizingMaskIntoConstraints = false
+        viewController.addChild(tapHostingController)
+        viewController.view.addSubview(tapHostingController.view)
+        tapHostingController.didMove(toParent: viewController)
+        NSLayoutConstraint.activate([
+            tapHostingController.view.centerXAnchor.constraint(equalTo: viewController.view.centerXAnchor),
+            tapHostingController.view.topAnchor.constraint(equalTo: viewController.view.safeAreaLayoutGuide.topAnchor, constant: 16)
+        ])
+
+        return viewController
     }
     
-    func updateUIView(_ uiView: ARView, context: Context) {}
-    
 }
-
 #if DEBUG
 struct ContentView_Previews : PreviewProvider {
     static var previews: some View {
