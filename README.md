@@ -1,4 +1,4 @@
 # RecyclAR
 
-iOS Augmented Reality app to inform users about packaging
-\n Role: AR Developer
+iOS Augmented Reality app to inform users about packaging  
+Role: AR Developer
